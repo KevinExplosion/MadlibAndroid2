@@ -59,6 +59,17 @@ public class MainActivity extends AppCompatActivity {
                     Log.d(TAG, adj1);
                     Log.d(TAG, adj2);
                     Intent intent = new Intent(MainActivity.this, MadlibActivity.class);
+                    intent.putExtra("adj1", adj1);
+                    intent.putExtra("adj2", adj2);
+                    intent.putExtra("adj3", adj3);
+                    intent.putExtra("adverb", adverb);
+                    intent.putExtra("noun1", noun1);
+                    intent.putExtra("noun2", noun2);
+                    intent.putExtra("noun3", noun3);
+                    intent.putExtra("noun4", noun4);
+                    intent.putExtra("noun5", noun5);
+                    intent.putExtra("noun6", noun6);
+                    intent.putExtra("pluralNoun", pluralNoun);
                     startActivity(intent);
                 }
             });
